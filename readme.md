@@ -118,6 +118,36 @@ padding: top right bottom left;
 
 ![display styles](http://i.stack.imgur.com/mGTYI.png)
 
+### Floats & Clearfix
+
+Floats allow content to wrap or `float` around eachother. A common problem form text layouts.
+
+![floats](https://css-tricks.com/wp-content/csstricks-uploads/web-text-wrap.png)
+
+The `clear` property stops floated elements from floating up
+
+![not cleared](https://css-tricks.com/wp-content/csstricks-uploads/unclearedfooter.png)
+
+![cleared](https://css-tricks.com/wp-content/csstricks-uploads/clearedfooter.png)
+
+#### Clearfix 
+
+Weird stuff can happen if all the children of an element are floated. The `parent` element can collapse. 
+
+![collapse](https://css-tricks.com/wp-content/csstricks-uploads/collapse.png)
+
+To fix this we clear the float **after** the floated elements. Pretty weird.
+
+```css
+whatevz-element:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+```
+
+[css-tricks](https://css-tricks.com/all-about-floats/)
+
 ### Centering (5)
   - css tricks https://css-tricks.com/snippets/css/a-guide-to-flexbox/
   - scotch.io https://scotch.io/tutorials/a-visual-guide-to-css3-flexbox-properties
@@ -128,9 +158,22 @@ padding: top right bottom left;
 Try to get through all 24 levels of this [flexbox exercise](http://flexboxfroggy.com/)
 
 ### Fonts
-  - comic papyrus
-  - [google fonts](https://www.google.com/fonts)
-  - linking fonts vs @import
+
+[comic papyrus](https://d3ui957tjb5bqd.cloudfront.net/uploads/2015/03/comic-papyrus-3.jpg)
+
+#### You do: Add a font
+  
+1. Go to [google fonts](https://www.google.com/fonts) and find a font you like
+- Then click the 'pop out' button (the two offset boxes) to view more details
+- When you're satisfied click 'Add to Collection', then 'Use' in the bottom right
+- Add the `<link href="` to your html file
+  - `<link href="` is typically preferred way to add a font instead of using `@import url(`
+- Add a rule to your css to use the font
+
+```csss
+font-family: bablkadf;
+```
+
 
 ### Styling stuff
 - common tags
@@ -189,7 +232,7 @@ Are a way of combining multiple images into a single file to help with download 
 
 ### Responsive design
 
-#### Turn and Talk
+#### You do: Turn and Talk
 Checkout [mediaqueri.es](http://mediaqueri.es/)
 What changes as the screen size adjusts?
 Is the same content available to all users regardless of device? Does it need to be?
