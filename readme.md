@@ -159,7 +159,7 @@ Try to get through all 24 levels of this [flexbox exercise](http://flexboxfroggy
 
 ### Fonts
 
-[comic papyrus](https://d3ui957tjb5bqd.cloudfront.net/uploads/2015/03/comic-papyrus-3.jpg)
+![comic papyrus](https://d3ui957tjb5bqd.cloudfront.net/uploads/2015/03/comic-papyrus-3.jpg)
 
 #### You do: Add a font
   
@@ -176,11 +176,19 @@ font-family: bablkadf;
 
 
 ### Styling stuff
-- common tags
+Common tags
   - border-radius
   - box-shadow
-- More CSS properties
+More CSS properties
   - https://developer.mozilla.org/en-US/docs/Web/CSS/Reference
+
+#### We Do: Practice using the inspector
+
+1. Right click on something on the page and select 'inspect'
+  - or `cmd` + `shift` + `c`
+- Uncheck a few properties and observe the changes
+- Select a css property in the styles panel and change the value
+- Add an additional property
 
 # Assets
 
