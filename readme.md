@@ -159,12 +159,14 @@ Here's a good overview comparing different image file types and what their appro
 </svg>
 ```
 
-Generates this image:
+Generates this image (without the grid):
 ![svg](https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/SVG_example_markup_grid.svg/782px-SVG_example_markup_grid.svg.png)
 
 Cons:
 - not supported by older browsers
 - can be messy depending on how they are exported
+
+[wikipedia](https://en.wikipedia.org/wiki/Scalable_Vector_Graphics)
 
 ### Icon fonts
 
@@ -175,9 +177,13 @@ Pros:
 - load fast
 - pretty good support
 
+[sitepoint](https://www.sitepoint.com/introduction-icon-fonts-font-awesome-icomoon/)
+
 ### Sprites
 
 Are a way of combining multiple images into a single file to help with download speed. They are often used for icons and simple animations.
+
+[css tricks](https://css-tricks.com/css-sprites/)
 
 # Bonus
 
